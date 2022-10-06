@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Студія</title>
+  </head>
+  <body data-body>
+    <header class="page-header">
+      <div class="page-header__flexbox container">
+        <a href="./index.html" lang="en" class="page-header__logo logo"
+          >Web<span class="logo__dark">Studio</span></a
+        >
+        <nav class="page-header__navidation navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="" class="navigation__link navigation__link--current">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
+            </li>
+            <li>
+              <a href="" class="navigation__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-header__contact contact">
+          <li class="contact__mail-item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon contact__icon--bigger">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              <span> info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="contact__phone-item">
+            <a href="tel:380961111111" class="contact__link">
+              <svg class="contact__icon contact__icon--smaller">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-menu__burger-menu burger-menu">
+          <button
+            class="burger-menu_btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <svg class="burger-menu_svg">
+              <use href="./images/sprite.svg#burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
+        </div>
+      </section>
+      <section class="benefits section">
+        <div class="container">
+          <h2 class="visually-hidden">Чому ми?</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__iconbg">
+                <svg class="benefits__icon">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">увага до деталей</h3>
+              <p class="benefits__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__iconbg">
+                <svg class="benefits__icon">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">пунктуальність</h3>
+              <p class="benefits__text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__iconbg">
+                <svg class="benefits__icon">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">планування</h3>
+              <p class="benefits__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__iconbg">
+                <svg class="benefits__icon">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">сучасні технології</h3>
+              <p class="benefits__text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title">Чим ми займаємося</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <img
+                srcset="
+                  ../images/photos/work/work_01_d-min.jpg    1x,
+                  ../images/photos/work/work_01_d@2x-min.jpg 2x
+                "
+                src="../images/photos/work/work_02_d-min.jpg"
+                alt="Робоче місце"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
+              <div class="features__holder">
+                <p class="features__text">Десктопні додатки</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <img
+                srcset="
+                  ../images/photos/work/work_03_d-min.jpg    1x,
+                  ../images/photos/work/work_03_d@2x-min.jpg 2x
+                "
+                src="../images/photos/work/work_02_d-min.jpg"
+                alt="Робоче місце"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
+              <div class="features__holder">
+                <p class="features__text">Мобільні додатки</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <img
+                srcset="
+                  ../images/photos/work/work_02_d-min.jpg    1x,
+                  ../images/photos/work/work_02_d@2x-min.jpg 2x
+                "
+                src="../images/photos/work/work_02_d-min.jpg"
+                alt="Робоче місце"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
+              <div class="features__holder">
+                <p class="features__text">Дизайнерські рішення</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team section">
+        <div class="container">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__card card">
+              <img
+                srcset="
+                  ../images/photos/team/team-01_d-min.jpg    270w,
+                  ../images/photos/team/team-01_t-min.jpg    354w,
+                  ../images/photos/team/team-01_m-min.jpg    450w,
+                  ../images/photos/team/team-01_d@2x-min.jpg 540w,
+                  ../images/photos/team/team-01_t@2x-min.jpg 708w,
+                  ../images/photos/team/team-01_m@2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="../images/photos/team/team-01_m-min.jpg "
+                alt="Ігор Дем'яненко"
+                loading="lazy"
+              />
+
+              <div class="card__container">
+                <h3 class="card__title">Ігор Дем'яненко</h3>
+                <p lang="en" class="card__speciality">Product Designer</p>
+                <ul class="card__list social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__card card">
+              <img
+                srcset="
+                  ../images/photos/team/team-02_d-min.jpg    270w,
+                  ../images/photos/team/team-02_t-min.jpg    354w,
+                  ../images/photos/team/team-02_m-min.jpg    450w,
+                  ../images/photos/team/team-02_d@2x-min.jpg 540w,
+                  ../images/photos/team/team-02_t@2x-min.jpg 708w,
+                  ../images/photos/team/team-02_m@2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="../images/photos/team/team-02_m-min.jpg "
+                alt="Ольга Рєпіна"
+                loading="lazy"
+              />
+              <div class="card__container">
+                <h3 class="card__title">Ольга Рєпіна</h3>
+                <p lang="en" class="card__speciality">Frontend Developer</p>
+                <ul class="card__list social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__card card">
+              <img
+                srcset="
+                  ../images/photos/team/team-03_d-min.jpg    270w,
+                  ../images/photos/team/team-03_t-min.jpg    354w,
+                  ../images/photos/team/team-03_m-min.jpg    450w,
+                  ../images/photos/team/team-03_d@2x-min.jpg 540w,
+                  ../images/photos/team/team-03_t@2x-min.jpg 708w,
+                  ../images/photos/team/team-03_m@2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="../images/photos/team/team-03_m-min.jpg "
+                alt="Микола Тарасов"
+                loading="lazy"
+              />
+              <div class="card__container">
+                <h3 class="card__title">Микола Тарасов</h3>
+                <p lang="en" class="card__speciality">Marketing</p>
+                <ul class="card__list social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__card card">
+              <img
+                srcset="
+                  ../images/photos/team/team-04_d-min.jpg    270w,
+                  ../images/photos/team/team-04_t-min.jpg    354w,
+                  ../images/photos/team/team-04_m-min.jpg    450w,
+                  ../images/photos/team/team-04_d@2x-min.jpg 540w,
+                  ../images/photos/team/team-04_t@2x-min.jpg 708w,
+                  ../images/photos/team/team-04_m@2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="../images/photos/team/team-04_m-min.jpg "
+                alt="Михайло Єрмаков"
+                loading="lazy"
+              />
+              <div class="card__container">
+                <h3 class="card__title">Михайло Єрмаков</h3>
+                <p lang="en" class="card__speciality">UI Designer</p>
+                <ul class="card__list social-list">
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      href="https://www.instagram.com/zelenskiy_official/"
+                      class="social-list__link social-list__link--active-white"
+                    >
+                      <svg class="social-list__icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients section">
+        <div class="container">
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
+                  <use href="./images/sprite.svg#icon-yaco"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
+                  <use href="./images/sprite.svg#icon-paper"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
+                  <use href="./images/sprite.svg#icon-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
+                  <use href="./images/sprite.svg#icon-foster"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
+                  <use href="./images/sprite.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
+                  <use href="./images/sprite.svg#icon-cube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__list container">
+        <div class="page-footer__info info">
+          <a href="./index.html" lang="en" class="logo"
+            >Web<span class="logo__light">Studio</span></a
+          >
+          <address class="info__address">
+            <a
+              href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
+              class="info__maps"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+            <ul class="info__contact contact">
+              <li>
+                <a href="mailto:info@devstudio.com" class="info__link">info@devstudio.com</a>
+              </li>
+              <li>
+                <a href="tel:380961111111" class="info__link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="page-footer__social-container social-container">
+          <p class="social-container__call">приєднуйтесь</p>
+          <ul class="social-container__social-list social-list">
+            <li class="social-list__item">
+              <a
+                href="https://www.instagram.com/zelenskiy_official/"
+                class="social-list__link social-list__link--black"
+              >
+                <svg class="social-list__icon social-list__icon--white">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                href="https://www.instagram.com/zelenskiy_official/"
+                class="social-list__link social-list__link--black"
+              >
+                <svg class="social-list__icon social-list__icon--white">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                href="https://www.instagram.com/zelenskiy_official/"
+                class="social-list__link social-list__link--black"
+              >
+                <svg class="social-list__icon social-list__icon--white">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                href="https://www.instagram.com/zelenskiy_official/"
+                class="social-list__link social-list__link--black"
+              >
+                <svg class="social-list__icon social-list__icon--white">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form-wrapper">
+          <p class="footer-form-text">Підпишіться на розсилку</p>
+          <form class="footer-form" action="">
+            <label class="footer-label">
+              <input class="footer-input" type="email" name="email-footer" placeholder=" " />
+              <span class="footer-label-text">E-mail</span>
+            </label>
+            <label class="footer-label">
+              <button class="footer-form-btn" type="submit">
+                <span class="footer-form-btn-text">Підписатися</span>
+                <svg class="send-icon">
+                  <use href="./images/sprite.svg#icon-send-footer"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-modal">
+        <div class="modal-container">
+          <button type="button" class="backdrop-btn" data-modal-close>
+            <svg class="close-icon">
+              <use href="./images/sprite.svg#new-close-btn"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="modal-form">
+            <label class="modal-label">
+              <span class="modal-label-text">Ім'я</span>
+              <input class="modal-input" type="text" name="modal-name" />
+              <svg class="modal-input-icon">
+                <use href="./images/sprite.svg#person-name-modal"></use>
+              </svg>
+            </label>
+            <label class="modal-label">
+              <span class="modal-label-text">Телефон</span>
+              <input class="modal-input" type="phone" name="modal-phone" />
+              <svg class="modal-input-icon">
+                <use href="./images/sprite.svg#phone-modal"></use>
+              </svg>
+            </label>
+            <label class="modal-label">
+              <span class="modal-label-text">Пошта</span>
+              <input class="modal-input" type="email" name="modal-email" />
+              <svg class="modal-input-icon">
+                <use href="./images/sprite.svg#email-modal"></use>
+              </svg>
+            </label>
+            <label class="modal-label modal-label-textarea">
+              <span class="modal-label-text">Коментар</span>
+              <textarea
+                class="modal-textarea"
+                name="modal-comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+            <label class="modal-label-checkbox">
+              <input class="modal-checkbox" type="checkbox" name="modal-terms" />
+              <span class="modal-checkbox-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="modal-checkbox-link" href="">&nbspУмови договору</a></span
+              >
+              <svg class="modal-checkbox-icon">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </label>
+            <label class="modal-label-btn">
+              <button class="modal-btn-submit" type="submit">Відправити</button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="burger-modal js-menu-container" id="mobile-menu">
+      <button type="button" class="burger-modal__btn js-close-menu" data-modal-close>
+        <svg class="close-icon">
+          <use href="./images/sprite.svg#new-close-btn"></use>
+        </svg>
+      </button>
+      <nav class="burger-modal__navigation">
+        <ul class="burger-modal__navigation-list">
+          <li>
+            <a href="" class="burger-modal__navigation-link burger-modal__navigation-link--current"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="burger-modal__navigation-link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="" class="burger-modal__navigation-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-modal__container">
+        <ul class="burger-modal__contact">
+          <li class="burger-modal__phone-item">
+            <a href="tel:380961111111" class="burger-modal__phone-item-link"> +38 096 111 11 11 </a>
+          </li>
+          <li class="burger-modal__mail-item">
+            <a href="mailto:info@devstudio.com" class="burger-modal__mail-item-link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="burger-modal__social-list">
+          <li class="burger-modal__social-item">
+            <a
+              href="https://www.instagram.com/zelenskiy_official/"
+              class="burger-modal__social-link"
+              >Instagram
+            </a>
+          </li>
+          <li class="burger-modal__social-item">
+            <a
+              href="https://www.instagram.com/zelenskiy_official/"
+              class="burger-modal__social-link"
+              >Twitter
+            </a>
+          </li>
+          <li class="burger-modal__social-item">
+            <a
+              href="https://www.instagram.com/zelenskiy_official/"
+              class="burger-modal__social-link"
+              >Facebook
+            </a>
+          </li>
+          <li class="burger-modal__social-item">
+            <a
+              href="https://www.instagram.com/zelenskiy_official/"
+              class="burger-modal__social-link"
+              >LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
