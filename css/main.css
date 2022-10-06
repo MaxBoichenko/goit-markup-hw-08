@@ -651,6 +651,24 @@ body {
   fill: var(--accent-color);
 }
 
+.close-icon-modified {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-btn:hover .close-icon-modified {
+  fill: var(--accent-color);
+}
+.burger-modal__btn:hover .close-icon-modified {
+  fill: var(--accent-color);
+}
+
 .page-header {
   border-bottom: 1px solid var(--border-color);
 }
@@ -1203,6 +1221,9 @@ body {
 @media screen and (min-width: 1200px) {
   .page-footer__social-container {
     margin-left: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
